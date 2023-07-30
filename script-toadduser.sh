@@ -13,3 +13,7 @@ sudo useradd -m "$username"
 echo " set password: "
 sudo passwd "$username"
 
+# Setting user permissions
+
+sudo usermod -aG sudo "$username"
+echo " User added to sudoer group"
